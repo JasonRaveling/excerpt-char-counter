@@ -32,13 +32,20 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 add_action( 'admin_enqueue_scripts', 'register_excerpt_char_counter_scripts' );
 
 function register_excerpt_char_counter_scripts( $hook ) {
-	if ('post.php' != $hook) {
+	if ('post.php' != $hook) { // only load when writing a post
 		return;
 	}
 
 	wp_enqueue_script(
 		'excerpt-char-counter',
 		plugins_url( '/excerpt-char-counter/include/excerpt-char-counter.js' ),
+		array( 'jquery' )
+	);
+
+	wp_enqueue_script(
+		'excerpt-char-counter-jquery',
+		//get_template_directory_uri() . '/include/javascript/jquery.js',
+		plugins_url( '/excerpt-char-couter/include/jquery.min.js' ),
 		array( 'jquery' )
 	);
 
