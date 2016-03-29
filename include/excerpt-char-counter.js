@@ -9,7 +9,7 @@ jQuery(document).ready(function() {
 	countTextBox.before('<div id="excerpt-char-count-wrapper"><span name="excerpt-char-count" id="excerpt-char-count"></span> characters remaining</div>');
 
 	var charsCountEl = $('#excerpt-char-count'); // Remaining chars count will be displayed here
-	charsCountEl.text(maxChars); // initial value of countchars element
+	charsCountEl.text('-'); // get chars count in textarea); // initial value of countchars element
 
 	// hide the "excerpts are optional" paragraph
 	$('#postexcerpt p').css('display', 'none');
