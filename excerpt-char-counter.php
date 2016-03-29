@@ -44,8 +44,7 @@ function register_excerpt_char_counter_scripts( $hook ) {
 
 	wp_enqueue_script(
 		'excerpt-char-counter-jquery',
-		plugins_url( '/excerpt-char-couter/include/jquery.min.js' ),
-		array( 'jquery' )
+		plugins_url( '/excerpt-char-counter/include/jquery.min.js' )
 	);
 
 	wp_register_style(
