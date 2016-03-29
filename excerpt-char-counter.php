@@ -3,7 +3,7 @@
 Plugin Name:  Excerpt Character Counter
 Description:  A WordPress plugin that adds a JQuery script to limit the number of characters entered into excerpts in posts and counts how many characters are left.
 Plugin URI:   https://github.com/webunraveling/excerpt-char-counter
-Version:      1.0
+Version:      1.1
 Author:       Jason Raveling
 Author URI:   http://webunraveling.com
 License:      GPL2
