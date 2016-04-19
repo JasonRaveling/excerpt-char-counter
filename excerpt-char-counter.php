@@ -32,7 +32,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 add_action( 'admin_enqueue_scripts', 'register_excerpt_char_counter_scripts' );
 
 function register_excerpt_char_counter_scripts( $hook ) {
-	if ('post.php' != $hook) { // only load when writing a post
+	if ('post.php' != $hook && 'post-new.php' != $hook) { // only load when writing a post
 		return;
 	}
 
